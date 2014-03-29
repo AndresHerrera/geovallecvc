@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="logo_geoide">
+    <file>logo_g.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>
