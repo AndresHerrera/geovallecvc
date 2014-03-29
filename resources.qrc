@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/plugins/geovallecvc">
+    <file>logo_g.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>
