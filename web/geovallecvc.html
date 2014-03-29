@@ -1,0 +1,72 @@
+<html>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style2 {color: #FF0000}
+-->
+</style>
+
+ <h1>Plugin para QGIS - Modelo Geoidal CVC del Valle del Cauca</h1>
+ <p><strong>Paso 1 </strong>: Descarga del plugin desde el repositorio, ubicado en <a href="http://54.245.115.218/plugin/plugins.xml" target="_blank">http://54.245.115.218/plugin/plugins.xml</a></p>
+ <p><img src="paso1.jpg" width="656" height="318"></p>
+ <p><strong>Paso 2: </strong>Descarga del plugin ( <a href="http://54.245.115.218/plugin/geovallecvc.zip">geovallecvc.zip</a> ) </p>
+ <p><img src="paso2.jpg" width="613" height="437"></p>
+ <p><strong>Paso 3:</strong> Descomprimir plugin en carpeta de plugins de QGIS </p>
+ <ul>
+   <li>UNIX/Mac:&nbsp;~/.qgis/python/plugins&nbsp;<strong>and</strong>&nbsp;(qgis_prefix)/share/qgis/python/plugins</li>
+   <li>Windows:&nbsp;~/.qgis/python/plugins&nbsp;<strong>and</strong>&nbsp;(qgis_prefix)/python/plugins</li>
+ </ul>
+ <p>Directorio de inicio  (denotado por &nbsp;~) en Windows usualmente es algo como C:\Documents and Settings\(usuario). Los subdirectorios en esta rutass son considerados como los paquetes de Python que se pueden importar a QGIS como plugins.</p>
+ <p><img src="paso3.jpg" width="902" height="442"></p>
+ <p>* Para mi caso, el archivo .zip lo descomprimi en <strong>C:\Users\Andres\.qgis2\python\plugins</strong> tal como muestra la grafica ! </p>
+ <p><strong>Paso 4:</strong> Iniciar QGIS y ir al men&uacute; de <span class="style2"><strong>Complemento</strong>s</span> -&gt; <strong>Administrar e instalar complementos</strong> </p>
+ <p><img src="paso4.jpg" width="836" height="520"> </p>
+ <p><strong>Paso 5:</strong> Habilitar plugin ( geovallecvc ) </p>
+ <p><img src="paso5.jpg" width="816" height="564"></p>
+ <p><strong>Paso 6:</strong> Iniciar plugin (<strong>geovallecvc</strong> ) desde el men&uacute; . <span class="style1">Complementos</span> -&gt; <strong>geovallecvc</strong> -&gt; <strong>Calculo Ondulaci&oacute;n Geoidal </strong></p>
+ <p><img src="paso6.jpg" width="834" height="514"></p>
+ <h2>Ejecutando el plugin </h2>
+ <p>* Ventana de Bienvenida y Acerca del plugin </p>
+ <p><img src="paso7.jpg" width="548" height="429"></p>
+ <p><strong>a) Calculo de ondulaci&oacute;n geoidal a partir de Coordenadas planas ( MAGNA-OESTE)</strong></p>
+ <p><img src="cal1.jpg" width="548" height="431"></p>
+ <p>- Digitar coordenadas Este, Norte y click en boton ( <strong>Calcular Ondulaci&oacute;n Geoidal </strong>) </p>
+ <p><img src="resultado_c1.jpg" width="549" height="433"></p>
+ <p>- Una vez realice el calculo, un mensaje  indicar&aacute; que fiinalizo el calculo (1), y el resultado de la ondulaci&oacute;n (m) aparecer&aacute; en (2). </p>
+ <p><strong>b) Calculo de ondulaci&oacute;n geoidal a partir de Coordenadas planas ( Bogota-OESTE) en antig&uacute;o sistema de referencia nacional (ARENA). </strong></p>
+ <p><img src="cal2.jpg" width="549" height="432"></p>
+ <p><strong>c) Calculo de ondulaci&oacute;n geoidal a partir de Coordenadas Geogr&aacute;ficas, en Grados,Minutos,Segundos ( DMS)</strong></p>
+ <p><strong><img src="cal3.jpg" width="548" height="430"></strong></p>
+ <p><strong>d) Calculo de ondulaci&oacute;n geoidal a partir de Coordenadas Geogr&aacute;ficas en (Decimales) </strong></p>
+ <p><img src="cal4.jpg" width="544" height="430"></p>
+ <p><strong>C</strong><strong>omentarios finales</strong></p>
+ <p>Espero que esta herramienta les sirva como utilidad, es mi <strong>primer plugin construido para QGIS</strong> realizado como ejercicio academico de exploraci&oacute;n de funcionalidades avanzadas en QGIS, as&iacute; que puede tener muchos Bugs, fue construido en m&aacute;s o menos 3 horas de desarrollo continuo, solo con conocimientos basicos de python, a continuaci&oacute;n algunos de links que recopilan las fuentes que us&eacute; para contruir este plugin: </p>
+ <ul>
+   <li><a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html" target="_blank">http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html</a></li>
+   <li><a href="http://gis.stackexchange.com/questions/26979/how-to-install-a-qgis-plugin-when-offline" target="_blank">http://gis.stackexchange.com/questions/26979/how-to-install-a-qgis-plugin-when-offline</a></li>
+   <li><a href="http://www.qgisworkshop.org/html/workshop/python_in_qgis_tutorial1.html" target="_blank">http://www.qgisworkshop.org/html/workshop/python_in_qgis_tutorial1.html</a></li>
+   <li><a href="http://www.spatialreference.org/ref/epsg/3115/">http://www.spatialreference.org/ref/epsg/3115/</a></li>
+   <li><a href="http://www.spatialreference.org/ref/epsg/21896/">http://www.spatialreference.org/ref/epsg/21896/</a></li>
+   <li><a href="http://www.spatialreference.org/ref/epsg/4326/">http://www.spatialreference.org/ref/epsg/4326/</a></li>
+   <li><a href="http://www.riverbankcomputing.co.uk/software/pyqt/intro">http://www.riverbankcomputing.co.uk/software/pyqt/intro</a></li>
+   <li><a href="http://www.pythondiario.com/2013/11/como-instalar-pyqt4-en-windows-linux-y.html">http://www.pythondiario.com/2013/11/como-instalar-pyqt4-en-windows-linux-y.htm</a></li>
+   <li><a href="https://wiki.python.org/moin/PyQt">https://wiki.python.org/moin/PyQt</a></li>
+   <li><a href="https://wiki.python.org/moin/PyQt4">https://wiki.python.org/moin/PyQt4</a></li>
+   <li><a href="https://pypi.python.org/pypi/GDAL/">https://pypi.python.org/pypi/GDAL/</a></li>
+   <li><a href="http://www.gdal.org/">http://www.gdal.org/</a></li>
+   <li><a href="http://trac.osgeo.org/gdal/wiki/GdalOgrInPython">http://trac.osgeo.org/gdal/wiki/GdalOgrInPython</a></li>
+ </ul>
+ <p> * Pronto la descarga se podra realizar directamente desde el repositorio de QGIS</p>
+ <ul>
+   <li><a href="http://plugins.qgis.org/plugins/geovallecvc/">http://plugins.qgis.org/plugins/geovallecvc/</a> </li>
+ </ul>
+ <p><strong>M&aacute;s acerca de geovalle ( Modelo geoidal para el valle del cauca ) </strong></p>
+ <ul>
+   <li><a href="http://geocvce.cvc.gov.co/visor/" target="_blank">http://geocvce.cvc.gov.co/visor/ </a></li>
+   <li><a href="http://www.cvc.gov.co/" target="_blank">http://www.cvc.gov.co/</a></li>
+ </ul>
+ <p>&nbsp;</p>
+ </html>
